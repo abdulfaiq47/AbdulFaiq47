@@ -115,7 +115,7 @@
 
 ---
 ### 📫 Connect With Me
-- 📧 [Email]: Abdulfaiq47@gmail.com
+- 📧 Email: Abdulfaiq47@gmail.com
 
 
 ---
