@@ -36,3 +36,60 @@
   </div>
 </body>
 </html>
+
+
+
+
+✅ Notice:  
+The entire code is wrapped inside a fenced code block (three backticks `````), so GitHub **shows it as formatted code**, not as raw broken HTML.
+
+---
+
+## 🚀 About Me
+
+- 🌱 Currently learning and exploring **backend** & **cloud deployment**
+- 💡 I love turning ideas into interactive web apps
+- ⚡ Always eager to learn & contribute to open-source projects
+- 💬 Ask me about **React, Node.js, MongoDB, Express, and Next.js**
+
+---
+
+## 🧰 Tech Stack
+
+![React](https://img.shields.io/badge/-React-61DBFB?style=flat&logo=react&logoColor=white)
+![Node.js](https://img.shields.io/badge/-Node.js-3C873A?style=flat&logo=node.js&logoColor=white)
+![MongoDB](https://img.shields.io/badge/-MongoDB-4EA94B?style=flat&logo=mongodb&logoColor=white)
+![Express](https://img.shields.io/badge/-Express-black?style=flat&logo=express&logoColor=white)
+![Next.js](https://img.shields.io/badge/-Next.js-black?style=flat&logo=next.js&logoColor=white)
+
+---
+
+### 🧠 Languages and Tools
+
+<p align="left">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" width="40" height="40"/>
+  <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" width="40" height="40"/>
+  <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" width="40" height="40"/>
+</p>
+
+---
+
+### 📫 Connect With Me
+
+📧 **Email:** [Abdulfaiq47@gmail.com](mailto:Abdulfaiq47@gmail.com)
+
+---
+
+### 🧠 Fun Fact
+
+> “The best way to predict the future is to build it.”
+
+---
+
+⭐️ From [Abdul Faiq](https://github.com/AbdulFaiq47)
+
