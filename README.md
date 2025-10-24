@@ -115,7 +115,7 @@
 
 ---
 ### 📫 Connect With Me
-- 📧 [Email](mailto:_____Abdulfaiq47@gmail.com________)
+- 📧 [Email]: Abdulfaiq47@gmail.com
 
 
 ---
