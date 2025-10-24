@@ -39,11 +39,6 @@
 
 ---
 
-### 📫 Connect With Me
-- 💼 [LinkedIn](___________________)
-- 📧 [Email](mailto:_____________)
-- 📱 Phone: ______________________
-
 <h3 align="left">Languages and Tools:</h3>
 <p align="left">
   <!-- HTML -->
@@ -117,6 +112,10 @@
   </a>
 </p>
 
+
+---
+### 📫 Connect With Me
+- 📧 [Email](mailto:_____Abdulfaiq47@gmail.com________)
 
 
 ---
