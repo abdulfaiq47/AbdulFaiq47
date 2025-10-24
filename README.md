@@ -1,6 +1,20 @@
 # 👋 Hi, I'm Abdul Faiq
 
-## 🧱 HTML & CSS Code
+## 💻 Coder Illustration — HTML & CSS recreation
+
+A simple card-style developer illustration (HTML + CSS).  
+This README shows a preview GIF and the full HTML/CSS code formatted for GitHub.
+
+---
+
+### 🎞 Preview
+> Put `preview.gif`, `lap.png` in the repo root (same folder as this README) so the image appears here.
+
+![Preview of Coder Illustration](./preview.gif)
+
+---
+
+### 🧱 HTML & CSS (paste into `index.html` to run locally)
 
 ```html
 <!doctype html>
@@ -19,77 +33,74 @@
       --accent-3: #f43f5e;
       --dark: #0f172a;
     }
-    * { box-sizing: border-box }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
       background: var(--bg);
       color: var(--dark);
+    }
+    .stage { min-height: 100vh; display:flex; align-items:center; justify-content:center; padding:48px; }
+    .card {
+      width:980px; max-width:95%; background:linear-gradient(180deg,#fff 0%,#f9fdff 100%);
+      border-radius:20px; padding:42px; display:grid; grid-template-columns:1fr 360px; gap:28px;
+      align-items:center; box-shadow:0 10px 30px rgba(15,23,42,0.08);
+    }
+    .left { display:flex; flex-direction:column; gap:20px; }
+    .code-window {
+      background:#232f4c; color:#fff; border-radius:12px; padding:18px; box-shadow:0 6px 18px rgba(2,6,23,0.2);
+      width:30%; max-width:560px; position:fixed; top:118px;
+    }
+    .code-row { height:12px; border-radius:8px; margin:8px 0; }
+    .c1 { width:50%; background:#f59e0b; }
+    .c2 { width:40%; background:#60a5fa; }
+    .c3 { width:30%; background:#fb7185; }
+    .avatar-wrap { display:flex; gap:24px; align-items:center; }
+    .right { display:flex; flex-direction:column; gap:18px; align-items:flex-end; }
+    .tag { padding:12px 18px; border-radius:12px; font-weight:700; color:#fff; box-shadow:0 6px 18px rgba(2,6,23,0.06); }
+    .tag.js { background:var(--accent-2); position:fixed; top:3px; right:300px; width:64px; font-size:x-large; height:56px; }
+    .tag.html { background:var(--accent-1); position:fixed; top:79px; right:135px; width:103px; font-size:x-large; height:55px; }
+    .tag.css { background:var(--accent-3); position:fixed; top:169px; right:124px; width:78px; font-size:x-large; height:59px; }
+    .panel { background-color:#0f172a; color:white; position:fixed; top:252px; right:55px; width:145px; border-radius:10px; height:98px; padding:12px; }
+    .panel-line { height:8px; background:rgba(255,255,255,0.1); border-radius:6px; margin:8px 0; }
+    .text-block video { height:330px; position:fixed; top:77px; left:166px; }
+    @media (max-width:880px) {
+      .card { grid-template-columns: 1fr; }
+      .right { align-items:flex-start; }
     }
   </style>
 </head>
 <body>
   <div class="stage">
     <div class="card">
-      <p>Your HTML & CSS design goes here!</p>
+      <div class="left">
+        <div class="code-window" aria-hidden="true">
+          <div class="code-row c1"></div>
+          <div class="code-row c2"></div>
+          <div class="code-row c3"></div>
+        </div>
+        <div class="avatar-wrap">
+          <div class="text-block">
+            <!-- If you want the real video in index.html, keep this video tag and place anim.mp4 next to index.html -->
+            <video autoplay loop muted playsinline width="400">
+              <source src="anim.mp4" type="video/mp4">
+            </video>
+          </div>
+          <img src="lap.png" alt="">
+        </div>
+      </div>
+      <div class="right">
+        <div class="tag js">JS</div>
+        <div class="tag html">HTML</div>
+        <div class="tag css">CSS</div>
+        <div class="panel" aria-hidden="true">
+          <div class="panel-line"></div>
+          <div class="panel-line" style="width:85%"></div>
+          <div class="panel-line" style="width:60%"></div>
+          <div class="panel-line" style="width:92%"></div>
+        </div>
+      </div>
     </div>
   </div>
 </body>
 </html>
-
-
-
-
-✅ Notice:  
-The entire code is wrapped inside a fenced code block (three backticks `````), so GitHub **shows it as formatted code**, not as raw broken HTML.
-
----
-
-## 🚀 About Me
-
-- 🌱 Currently learning and exploring **backend** & **cloud deployment**
-- 💡 I love turning ideas into interactive web apps
-- ⚡ Always eager to learn & contribute to open-source projects
-- 💬 Ask me about **React, Node.js, MongoDB, Express, and Next.js**
-
----
-
-## 🧰 Tech Stack
-
-![React](https://img.shields.io/badge/-React-61DBFB?style=flat&logo=react&logoColor=white)
-![Node.js](https://img.shields.io/badge/-Node.js-3C873A?style=flat&logo=node.js&logoColor=white)
-![MongoDB](https://img.shields.io/badge/-MongoDB-4EA94B?style=flat&logo=mongodb&logoColor=white)
-![Express](https://img.shields.io/badge/-Express-black?style=flat&logo=express&logoColor=white)
-![Next.js](https://img.shields.io/badge/-Next.js-black?style=flat&logo=next.js&logoColor=white)
-
----
-
-### 🧠 Languages and Tools
-
-<p align="left">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" width="40" height="40"/>
-  <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" width="40" height="40"/>
-  <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" width="40" height="40"/>
-</p>
-
----
-
-### 📫 Connect With Me
-
-📧 **Email:** [Abdulfaiq47@gmail.com](mailto:Abdulfaiq47@gmail.com)
-
----
-
-### 🧠 Fun Fact
-
-> “The best way to predict the future is to build it.”
-
----
-
-⭐️ From [Abdul Faiq](https://github.com/AbdulFaiq47)
-
