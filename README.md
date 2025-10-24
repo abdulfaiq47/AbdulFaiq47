@@ -1,7 +1,7 @@
 # 👋 Hi, I'm Abdul Faiq
 ### 🧱 HTML & CSS Code
 
-```html
+html
 <!doctype html>
 <html lang="en">
 
@@ -208,7 +208,7 @@
 
 </html>
 
----
+
 
 ### 🚀 About Me
 - 🌱 Currently learning and exploring advanced backend and cloud deployment.
