@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Coder Illustration (HTML/CSS recreation)</title>
+    <style>
+        :root {
+            --bg: #f7fbff;
+            --card: #ffffff;
+            --muted: #b7c7d6;
+            --accent-1: #3b82f6;
+            /* blue */
+            --accent-2: #10b981;
+            /* green */
+            --accent-3: #f43f5e;
+            /* pink/red */
+            --dark: #0f172a;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+            background: var(--bg);
+            color: var(--dark);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale
+        }
+
+        .stage {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 48px
+        }
+
+        .card {
+            width: 980px;
+            max-width: 95%;
+            background: linear-gradient(180deg, #fff 0%, #f9fdff 100%);
+            border-radius: 20px;
+            padding: 42px;
+            display: grid;
+            grid-template-columns: 1fr 360px;
+            gap: 28px;
+            align-items: center;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08)
+        }
+
+        /* Left column: mock code & avatar */
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: 20px
+        }
+
+        .code-window {
+            background: #232f4c;
+            color: #fff;
+            border-radius: 12px;
+            padding: 18px;
+            box-shadow: 0 6px 18px rgba(2, 6, 23, 0.2);
+            width: 30%;
+            max-width: 560px;
+            position: fixed;
+            top: 118px;
+        
+        }
+
+        .code-row {
+            height: 12px;
+            border-radius: 8px;
+            margin: 8px 0
+        }
+
+        .c1 {
+            width: 50%;
+            background: #f59e0b;
+        }
+
+        .c2 {
+            width: 40%;
+            background: #60a5fa
+        }
+
+        .c3 {
+            width: 30%;
+            background: #fb7185
+        }
+
+        .avatar-wrap {
+            display: flex;
+            gap: 24px;
+            align-items: center
+        }
+
+
+
+        /* Right column: floating tags and panel */
+        .right {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            align-items: flex-end
+        }
+
+        .tag {
+            padding: 12px 18px;
+            border-radius: 12px;
+            font-weight: 700;
+            color: #fff;
+            box-shadow: 0 6px 18px rgba(2, 6, 23, 0.06)
+        }
+
+        .tag.js {
+            background: var(--accent-2);
+            position: fixed;
+            top: 3px;
+            right: 300px;
+            width: 64px;
+            font-size: x-large;
+            height: 56px;
+        }
+
+        .tag.html {
+            background: var(--accent-1);
+            position: fixed;
+            top: 79px;
+            right: 135px;
+            width: 103px;
+            font-size: x-large;
+            height: 55px;
+        }
+
+        .tag.css {
+            background: var(--accent-3);
+            position: fixed;
+            top: 169px;
+            right: 124px;
+            width: 78px;
+            font-size: x-large;
+            height: 59px;
+        }
+
+        .panel {
+            background-color: #0f172a;
+            color: white;
+            position: fixed;
+            top: 252px;
+            right: 55px;
+            width: 145px;
+            border-radius: 10px;
+            height: 98px;
+            padding: 12px;
+        }
+
+        .panel-line {
+            height: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+            margin: 8px 0
+        }
+
+        .text-block video {
+            height: 330px;
+            position: fixed;
+            top: 77px;
+            left: 166px;
+        }
+
+        /* responsive */
+        @media (max-width:880px) {
+            .card {
+                grid-template-columns: 1fr;
+            }
+
+            .right {
+                align-items: flex-start
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stage">
+        <div class="card">
+            <div class="left">
+                <div class="code-window" aria-hidden="true">
+                    <div class="code-row c1"></div>
+                    <div class="code-row c2"></div>
+                    <div class="code-row c3"></div>
+                </div>
+
+                <div class="avatar-wrap">
+                    <div class="text-block">
+                        <video autoplay loop muted playsinline width="400">
+                            <source src="anim.mp4" type="video/mp4">
+
+                        </video>
+
+                    </div>
+                    <img src="lap.png" alt="">
+
+
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="tag js">JS</div>
+                <div class="tag html">HTML</div>
+                <div class="tag css">CSS</div>
+
+                <div class="panel" aria-hidden="true">
+                    <div class="panel-line"></div>
+                    <div class="panel-line" style="width:85%"></div>
+                    <div class="panel-line" style="width:60%"></div>
+                    <div class="panel-line" style="width:92%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
