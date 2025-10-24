@@ -125,4 +125,4 @@
 
 ---
 
-⭐️ From [Abdul Faiq](https://github.com/AbdulFaiq)
+⭐️ From [Abdul Faiq](https://github.com/AbdulFaiq47)
