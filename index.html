@@ -32,33 +32,9 @@
             -moz-osx-font-smoothing: grayscale
         }
 
-        .stage {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 48px
-        }
-
-        .card {
-            width: 980px;
-            max-width: 95%;
-            background: linear-gradient(180deg, #fff 0%, #f9fdff 100%);
-            border-radius: 20px;
-            padding: 42px;
-            display: grid;
-            grid-template-columns: 1fr 360px;
-            gap: 28px;
-            align-items: center;
-            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08)
-        }
 
         /* Left column: mock code & avatar */
-        .left {
-            display: flex;
-            flex-direction: column;
-            gap: 20px
-        }
+
 
         .code-window {
             background: #232f4c;
@@ -69,8 +45,9 @@
             width: 30%;
             max-width: 560px;
             position: fixed;
-            top: 118px;
-        
+            top: 68px;
+            left: 55px;
+
         }
 
         .code-row {
@@ -136,9 +113,11 @@
             width: 103px;
             font-size: x-large;
             height: 55px;
+            padding-left: 27px;
         }
 
         .tag.css {
+            padding-left: 25px;
             background: var(--accent-3);
             position: fixed;
             top: 169px;
@@ -167,12 +146,86 @@
             margin: 8px 0
         }
 
-        .text-block video {
-            height: 330px;
+        .man {
+            height: 265px;
             position: fixed;
-            top: 77px;
-            left: 166px;
+            top: 64px;
+            left: 279px;
         }
+
+        .lap {
+            height: 118px;
+            position: fixed;
+            top: 247px;
+            left: 152px;
+        }
+
+        .hand {
+            height: 47px;
+            position: fixed;
+            top: 311px;
+            left: 334px;
+        }
+
+        /* Floating motion (left-right + up-down, slower) */
+        @keyframes float-3d {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            25% {
+                transform: translate(6px, -6px);
+            }
+
+            /* right & up */
+            50% {
+                transform: translate(0, 4px);
+            }
+
+            /* center & down */
+            75% {
+                transform: translate(-6px, -4px);
+            }
+
+            /* left & up */
+            100% {
+                transform: translate(0, 0);
+            }
+
+            /* back center */
+        }
+
+        /* Apply smooth float to elements */
+        .code-window,
+        .panel,
+        .tag.css,
+        .tag.html,
+        .tag.js {
+            animation: float-3d 8s ease-in-out infinite;
+        }
+
+        /* Slightly staggered start times for realism */
+        .code-window {
+            animation-delay: 0s;
+        }
+
+        .panel {
+            animation-delay: 0.8s;
+        }
+
+        .tag.css {
+            animation-delay: 1.6s;
+        }
+
+        .tag.html {
+            animation-delay: 0.4s;
+        }
+
+        .tag.js {
+            animation-delay: 1.2s;
+        }
+
+
 
         /* responsive */
         @media (max-width:880px) {
@@ -198,23 +251,22 @@
                 </div>
 
                 <div class="avatar-wrap">
-                    <div class="text-block">
-                        <video autoplay loop muted playsinline width="400">
-                            <source src="anim.mp4" type="video/mp4">
 
-                        </video>
+                    <img class="man" src="anim.gif" alt="">
 
-                    </div>
-                    <img src="lap.png" alt="">
+
+                    <img class="lap" src="lap.png" alt="">
+                    <img class="hand" src="hand.png" alt="">
 
 
                 </div>
             </div>
 
             <div class="right">
-                <div class="tag js">JS</div>
-                <div class="tag html">HTML</div>
-                <div class="tag css">CSS</div>
+                <div class="tag js"><img src="py.svg" alt=""></div>
+                <div class="tag html">&lt;/&gt;
+                </div>
+                <div class="tag css">{};</div>
 
                 <div class="panel" aria-hidden="true">
                     <div class="panel-line"></div>
