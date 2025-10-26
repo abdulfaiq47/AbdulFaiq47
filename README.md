@@ -1,21 +1,14 @@
 # 👋 Hi, I'm Abdul Faiq
 ### 🧱 HTML & CSS Code---
+---
 layout: default
 title: Embedded Home Page
 ---
 
-<style>
-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  border: none;
-}
-</style>
-
-<iframe src="https://abdulfaiq47.github.io/AbdulFaiq47/"></iframe>
+<iframe 
+  src="https://abdulfaiq47.github.io/AbdulFaiq47/" 
+  style="width:100vw; height:100vh; border:none;">
+</iframe>
 
 
 
