@@ -1,14 +1,95 @@
 # 👋 Hi, I'm Abdul Faiq
 ### 🧱 HTML & CSS Code---
----
-layout: default
-title: Embedded Home Page
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Embedded + Backup</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
 
-<iframe 
-  src="https://abdulfaiq47.github.io/AbdulFaiq47/" 
-  style="width:100vw; height:100vh; border:none;">
-</iframe>
+    /* iframe full screen */
+    iframe {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+    }
+
+    /* fallback box */
+    #fallback {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40vw;          /* adjust width */
+      height: 25vh;         /* your 25vh height */
+      background: #f7fbff;
+      border: 2px solid #0f172a;
+      display: none;
+      overflow: hidden;
+    }
+
+    /* smaller version of your design */
+    #fallback iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      transform: scale(0.45);
+      transform-origin: top left;
+    }
+  </style>
+</head>
+<body>
+  <!-- Main iframe -->
+  <iframe id="main" src="https://abdulfaiq47.github.io/AbdulFaiq47/" onerror="showFallback()"></iframe>
+
+  <!-- Fallback content -->
+  <div id="fallback">
+    <!-- your coder illustration -->
+    <iframe srcdoc='
+    <!doctype html>
+    <html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <style>
+      body{margin:0;background:#f7fbff;}
+      .code-window{background:#232f4c;color:#fff;border-radius:12px;padding:18px;width:100%;height:100%;}
+      .c1{width:50%;height:12px;background:#f59e0b;margin:8px 0;border-radius:8px;}
+      .c2{width:40%;height:12px;background:#60a5fa;margin:8px 0;border-radius:8px;}
+      .c3{width:30%;height:12px;background:#fb7185;margin:8px 0;border-radius:8px;}
+    </style>
+    </head>
+    <body>
+      <div class="code-window">
+        <div class="c1"></div>
+        <div class="c2"></div>
+        <div class="c3"></div>
+      </div>
+    </body>
+    </html>'>
+    </iframe>
+  </div>
+
+  <script>
+    // If main iframe fails, show fallback box
+    function showFallback() {
+      document.getElementById('fallback').style.display = 'block';
+    }
+
+    // Also show fallback if iframe doesn’t load within a few seconds
+    setTimeout(() => {
+      const iframe = document.getElementById('main');
+      if (!iframe.contentWindow || iframe.contentWindow.location.href === 'about:blank') {
+        showFallback();
+      }
+    }, 5000);
+  </script>
+</body>
+</html>
+
 
 
 
