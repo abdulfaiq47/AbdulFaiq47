@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Abdul Faiq
+#  Hy, I'm Abdul Faiq
 
 <img align="right"  alt="Coding"   width="400"  src="https://raw.githubusercontent.com/abdulfaiq47/AbdulFaiq47/main/ani.gif">
 
