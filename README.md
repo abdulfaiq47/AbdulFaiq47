@@ -1,5 +1,6 @@
 #  Hy, I'm Abdul Faiq
-AI & ML Engineer with a passion for python, Machine Learning, Data Visualization, Machine Learning & Gen-AI.
+<h3 align="center">AI & ML Engineer with a passion for python, Machine Learning, Data Visualization, deep Learning & Gen-AI.</h3>
+
 
 <img align="right"  alt="Coding"   width="400"  src="https://raw.githubusercontent.com/abdulfaiq47/AbdulFaiq47/main/ani.gif">
 
