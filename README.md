@@ -9,10 +9,10 @@
 
 
 ### 🚀 About Me
-- 🌱 Currently learning and exploring advanced backend and cloud deployment.
+- 🌱 Currently learning and exploring ML  and advanced backend.
 - 💡 I love turning ideas into interactive, high-performance web solutions.
 - ⚡ Always eager to learn and contribute to open-source projects.
-- 💬 Ask me about **React, Node.js, MongoDB, Express, and Next.js**.
+- 💬 Ask me about **React, Node.js, MongoDB, Express, Next.js and Python.**.
 
 ---
 
